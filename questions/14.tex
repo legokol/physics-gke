@@ -1,0 +1,65 @@
+\section{Распределения Максвелла и Больцмана.}
+
+Поставим задачу о распределении частиц газа по скоростям. Будем рассматривать пространство скоростей. Пусть $d \omega$ -- вероятность вектора скорости в этом пространстве попасть в параллелепипед $dv_x dv_y dv_z$. Вероятность должна быть пропорционально объёму, то есть
+
+\begin{equation*}
+        d \omega = f(v) dv_x dv_y dv_z = \phi (v_x) \phi (v_y) \phi (v_z) dv_x dv_y dv_z
+\end{equation*}
+
+\noindent
+Где мы считаем независимыми друг от друга события, выражающие попадания в соответствующие интервалы по разным осям. Пользуясь этим предположением и изотропностью пространства, можно получить \textit{распределение Максвелла}:
+
+\begin{enumerate}
+    \item Одномерный случай:
+    \begin{equation}
+        f_1 (v) = \sqrt{\frac{m}{2 \pi k T}} \exp \left( -\frac{m v^2}{2 k T} \right)
+    \end{equation}
+    \item Двумерный случай:
+    \begin{equation}
+        f_2 (v) = \frac{m}{2 \pi k T} \exp \left( -\frac{m v^2}{2 k T} \right)
+    \end{equation}
+    \item Трёхмерный случай:
+    \begin{equation}
+        f_3 (v) = \left( \frac{m}{2 \pi k T} \right)^{3/2} \exp \left( -\frac{m v^2}{2 k T} \right)
+    \end{equation}
+\end{enumerate}
+
+Рассмотрим теперь распределение не по направлениям, а по величине скорости $F(v)$. С учётом полученных ранее результатов,
+
+\begin{equation}
+    F(v) dv = f_3(v) \cdot 4 \pi v^2 dv = 4 \pi \left( \frac{m}{2 \pi k T} \right)^{3/2} v^2 \exp \left( -\frac{m v^2}{2 k T} \right)
+\end{equation}
+
+Поставим теперь вопрос распределения частиц в пространстве. В отсутствие внешних сил в равновесии концентрация молекул газа будет всюду одинакова, однако ситуация изменится при добавлении внешних полей. Рассмотрим идеальный газ в поле тяжести. Выделим столб газа толщины $dz$ с основанием площадью $S$. Сила тяжести этого столба должна уравновешиваться разностью давлений:
+
+\begin{equation*}
+    \left( P_1 - P_2 \right) S = - \frac{dP}{dz} S dz = n m g S dz
+\end{equation*}
+
+\noindent
+Отсюда
+
+\begin{equation}
+    \frac{dP}{dz} = - n m g
+\end{equation}
+
+\noindent
+В идеальном газе $P = n k T$. В предположении, что температура газа всюду одинакова, получим
+
+\begin{equation*}
+    k T \frac{dn}{dz} = - n m g \Rightarrow k T d \ln n = - m g dz
+\end{equation*}
+
+\noindent
+Таким образом, получаем \textit{барометрическую формулу}
+
+\begin{equation} \label{eq:барометрическая формула}
+    n = n_0 \exp \left( - \frac{m g h}{k T} \right)
+\end{equation}
+
+\noindent
+\eqref{eq:барометрическая формула} обобщается на общий случай потенциальных сил. Результатом является \textit{распределение Больцмана}:
+
+\begin{equation}
+    n = n_0 \exp \left( - \frac{\epsilon_p}{k T} \right)
+\end{equation}

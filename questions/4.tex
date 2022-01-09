@@ -1,0 +1,50 @@
+\section{Уравнение движения релятивистской частицы под действием внешней силы. Импульс и энергия релятивистской частицы.}
+
+\begin{definition}
+    Импульс релятивистской частицы $\b p = \dfrac{m \b v}{\sqrt{1 - \frac{v^2}{c^2}}}$.
+\end{definition}
+
+При таком определении импульса уравнение движения принимает вид
+
+\begin{equation} 
+    \frac{d}{dt} \left( \frac{m \b v}{\sqrt{1 - \frac{v^2}{c^2}}} \right) = \b F
+\end{equation}
+
+\noindent
+С учётом обозначения Лоренц-фактора $\gamma = \dfrac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$, при дифференцировании получим
+
+\begin{equation} \label{eq:уравнение движения релятивистской частицы}
+    \b F = \gamma m \frac{d \b v}{dt} + m \b v \left[ \frac{1}{2 \left( 1 - \frac{v^2}{c^2} \right)^{3/2}} \right] \left( \frac{2 \b v}{c^2},  \frac{d \b v}{dt} \right) = \gamma m \b a + \gamma^3 \frac{m}{c^2} \b v \left( \b v, \b a \right)
+\end{equation}
+
+\noindent
+Таким образом, в общем случае ускорение не параллельно силе. Домножив обе части равенства \eqref{eq:уравнение движения релятивистской частицы} скалярно на $\b v$, получим:
+
+\begin{equation*}
+    \left( \b v, \b F \right) = \gamma^3 m \left( \b v, \b a \right)
+\end{equation*}
+
+\noindent
+Используя это соотношение приведём \eqref{eq:уравнение движения релятивистской частицы} к виду 
+
+\begin{equation}
+    \gamma m \b a = \b F - \frac{\b v}{c^2} \left( \b v, \b F  \right)
+\end{equation}
+
+Получим выражение для кинетической энергии в случае действия силы вдоль скорости:
+
+\begin{equation}
+    \delta A = d K = \left( \b F, d \b s \right) = \left( \b F, \b v dt \right) = \gamma^3 m v dv
+\end{equation}
+
+\begin{equation}
+    K = \int_0^v \frac{m d \left( v^2 \right)}{2 \left( 1 - \frac{v^2}{c^2} \right)^{3/2}} = \left( \gamma - 1 \right) m c^2
+\end{equation}
+
+Величина $E = \gamma m c^2$ называется полной энергией тела, $E_0 = m c^2$ -- энергией покоя, а их разница -- кинетической энергией. С учётом выражения импульса имеем
+
+\begin{equation}
+    E^2 = \left( m c^2 \right)^2 + \left( p c \right)^2
+\end{equation}
+
+Поскольку энергия покоя инварианта относительно преобразований ЛОренца, то величина $E^2 - \left( p c \right)^2$ также является релятивистским инвариантом. Законы сохранения энергии и импульса остаются верны и в релятивистской механике.

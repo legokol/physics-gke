@@ -1,0 +1,33 @@
+\section{Спектральное разложение электрических сигналов. Спектры колебаний, модулированных по амплитуде и фазе.}
+
+Рассмотрим негармонический электрический сигнал вида $f(t)$ с периодом $T$, т.е. $f(t + T) = f(t)$. Такие сигналы неудобны для рассмотрения, однако можно воспользоваться теоремой Фурье и разложить его в гармонический ряд:
+
+\begin{align}
+    f(t) = a_0 + \sum_{n = 1}^\infty \left( a_n \cos n \omega t + b_n \sin n \omega t \right) \\
+    a_0 = \frac{1}{T} \int_{- T / 2}^{T / 2} f(t) d t \\
+    a_n = \frac{2}{T} \int_{- T / 2}^{T / 2} f(t) \cos n \omega t d t \\
+    b_n = \frac{2}{T} \int_{- T / 2}^{T / 2} f(t) \sin n \omega t d t
+\end{align}
+
+\noindent
+Здесь $\omega = 2 \pi / T$. Таким образом произвольный сигнал рассматривается как суперпозиция гармонических. Рассмотрим некоторые частные случаи.
+
+Амплитудная модуляция -- амплитуда меняется с малой частотой $\Omega \ll \omega$, $m \ll 1$:
+
+\begin{equation}
+    f(t) = A \left( 1 + m \cos \Omega t \right) \cos \omega t
+\end{equation}
+
+\noindent
+Раскрывая скобки и воспользовавшись выражением для произведения косинусов, получим:
+
+\begin{equation}
+    f(t) = A \cos \omega t + \frac{m A}{2} \left( \cos \left( \omega + \Omega \right) t + \cos \left( \omega - \Omega \right) t \right)
+\end{equation}
+
+Фазовая модуляция -- фаза меняется с малой частотой $\Omega \ll \omega$, $m \ll 1$:
+
+\begin{multline}
+    f(t) = A \cos \left( \omega t + m \cos \Omega t \right) = A \left( \cos \omega t \cos m \cos \Omega t + \sin \omega t \sin m \cos \Omega t \right) \approx \\
+    \approx A \cos \omega t + m A \sin \omega t \cos \Omega t = A \cos \omega t + \frac{m A}{2} \left( \sin \left( \omega + \Omega \right) t + \sin \left( \omega - \Omega \right) t \right)
+\end{multline}

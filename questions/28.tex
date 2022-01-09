@@ -1,0 +1,47 @@
+\section{Закон сохранения энергии для электромагнитного поля. Вектор Пойнтинга. Импульс электромагнитного поля.}
+
+Дополним уравнения Максвелла законом сохранения энергии. При изменении электромагнитного поля и прохождении электрического тока в единице объёма $dV$ совершается внешняя работа
+
+\begin{equation}
+    \delta A^\text{внеш} = \frac{1}{4 \pi} \left( \b E d \b D + \b H d \b B \right) + \b j \b E dt
+\end{equation}
+
+Эта работа идёт на приращение внутренней энергии кроме теплоты, покидающей элемент объёма вследствие теплопроводности. Этой потерей пренебрежём. Если $u$ -- внутренняя энергия единицы объёма (плотность энергии), то $\delta A^\text{внеш} = du$ или
+
+\begin{equation}
+    \frac{\partial u}{\partial t} = \frac{1}{4 \pi} \left( \b E \b{\dot D} + \b H \b{\dot B} \right) + \b j \b E
+\end{equation}
+
+\noindent
+С учётом уравнений Максвелла имеем:
+
+\begin{equation*}
+    \b E \left( \frac{1}{4 \pi} \b{\dot D} + \b j \right) + \frac{1}{4 \pi} \b H \b{\dot B} = \frac{c}{4 \pi} \left( \b E \rot \b H - \b H \rot \b E \right)
+\end{equation*}
+
+\noindent
+Учтём векторное тождество:
+
+\begin{equation*}
+    \b E \rot \b H - \b H \rot \b E = - \div \left[ \b E, \b H \right]
+\end{equation*}
+
+\noindent
+Введём обозначение:
+
+\begin{equation}
+    \b S = \frac{c}{4 \pi} \left[ \b E, \b H \right]
+\end{equation}
+
+\noindent
+Тогда закон сохранения энергии примет вид
+
+\begin{equation}
+    \frac{\partial u}{\partial t} + \div \b S = 0
+\end{equation}
+
+Вектор $\b S$ называется \textit{вектором Пойнтинга} и имеет смысл плотности потока электромагнитной энергии. Определим теперь плотность потока импульса $\b g$ электромагнитного поля. Пусть $w$ -- плотность электромагнитной энергии. Соответствующая ей плотность массы будет равна $w / c^2$, а значит импульс $\b g = w \b v / c^2$. Заметим, что плотность потока энергии есть $\b S = w \b v$, а значит
+
+\begin{equation}
+    \b g = \frac{\b S}{c^2} = \frac{1}{4 \pi c} \left[ \b E, \b H \right]
+\end{equation}

@@ -1,0 +1,61 @@
+\section{Флуктуации в термодинамических системах.}
+
+\begin{definition}
+    Флуктуацией физической величины $f$ называется её отклонение $\Delta f = f - \overline{f}$ от среднего значения.
+\end{definition}
+
+Среднее значение флуктуации равно нулю, так что на практике используют средний квадрат флуктуации $\overline{\left( \Delta f \right)^2}$. Квадратный корень из этой величины $\sqrt{\overline{\left( \Delta f \right)^2}}$ называется \textit{среднеквадратичной флуктуацией}, а его отношение к среднему $\sqrt{\overline{\left( \Delta f \right)^2}} / \overline{f}$ -- \textit{среднеквадратичной относительной флуктуацией}. Заметим, что
+
+\begin{equation*}
+    \overline{\left( \Delta f \right)^2} = \overline{f^2} - \left( \overline{f} \right)^2
+\end{equation*}
+
+Рассмотрим физическую систему, состоящую из $N$ одинаковых частей. Пусть $f_i$ -- аддитивная физическая величина, характеризующая $i$-ую подсистему, например кинетическая энергия молекулы идеального газа. Тогда для всей системы $F = \sum_i f_i$. Рассчитаем средний квадрат флуктуации. Если считать все составляющие системы одинаковыми, то $\overline{F} = \sum_i \overline{f_i} = N \overline{f}$. Для квадрата величины имеем
+
+\begin{equation*}
+    F^2 = \left( \sum_i f_i \right)^2 = \sum_i f_i^2 + \sum_{i \neq j} f_i f_j
+\end{equation*}
+
+\noindent
+Если считать части независимыми, то $\overline{f_i f_j} = \overline{f_i} \overline{f_j} = \left( \overline{f} \right)^2$. Таким образом
+
+\begin{equation*}
+    \overline{F^2} = N \overline{f^2} + N (N - 1) \left( \overline{f} \right)^2
+\end{equation*}
+
+\noindent
+Тогда для квадратичной флуктуации имеем
+
+\begin{equation}
+    \overline{\left( \Delta F \right)^2} = N \left( \overline{f^2} - \overline{f}^2 \right)
+\end{equation}
+
+\noindent
+А для относительной
+
+\begin{equation}
+    \frac{\sqrt{\overline{\left( \Delta F \right)^2}}}{\overline{F}} = \frac{1}{\sqrt{N}} \frac{\sqrt{\overline{\left( \Delta f \right)^2}}}{\overline{f}}
+\end{equation}
+
+\noindent
+Таким образом, с увеличением числа частиц флуктуация величины $F$ убывает пропорционально корню из числа частиц.
+
+Рассмотрим флуктуацию числа частиц молекул идеального газа в фиксированном объёме $V$. Пусть в нём находится $N$ молекул идеального газа. Разделим его на $z = V / v$ одинаковых маленьких объёмов величины $v$. Если $n_i$ -- число молекул в $i$-ом объёме, то $N = \sum_i n_i$. Среднее число частиц в маленьком объёме $\overline{n_i} = \overline{n} = N v / V = N p$, где $p = v / V$ -- вероятность нахождения молекулы в объёме. Пусть теперь $f_i = 1$, если $i$-ая молекула находится в объёме $v$, и 0, если вне его. Тогда $n = \sum_i f_i$. Заметим, что $f_i = f_i^2 = f_i^3 = \dots$, а значит $\overline{f_i} = \overline{f_i^2} = \dots = p$. Таким образом
+
+\begin{equation}
+    \overline{\left( \Delta f_i \right)^2} = \overline{f_i^2} - \left( \overline{f_i} \right)^2 = p \left( 1 - p \right)
+\end{equation}
+
+\noindent
+Поскольку в случае идеального газа величины $f_1, f_2, \dots$ независимы
+
+\begin{equation}
+    \overline{\Delta n^2} = N p \left( 1 - p \right) = \overline{n} \left( 1 - p \right)
+\end{equation}
+
+\noindent
+Если объём $V$ много больше, чем $v$, имеем
+
+\begin{equation}
+    \overline{\Delta n^2} = \overline{n}
+\end{equation}

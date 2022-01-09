@@ -1,0 +1,43 @@
+\section{Электромагнитные волны. Волновое уравнение. Уравнение Гельмгольца.}
+
+Рассмотрим уравнения Максвелла в среде без свободных зарядов и токов с диэлектрической проницаемостью $\epsilon$ и магнитной проницаемостью $\mu$. Они примут вид:
+
+\begin{align*}
+    \div \b E &= 0 & \rot \b E &= - \frac{1}{c} \frac{\partial \b B}{\partial t} \\
+    \div \b B &= 0 & \rot \b B &= \frac{\epsilon \mu}{c} \frac{\partial \b E}{\partial t}
+\end{align*}
+
+\noindent
+Применим оператор ротора к одному из векторных уравнений. Учтём, что $\rot \rot \b E = \nabla \div \b E - \nabla^2 \b E$. С учётом скалярных уравнений и перестановочности операторов дифференцирования по координатам и времени, получим:
+
+\begin{equation*}
+    - \Delta \b E = -\frac{1}{c} \frac{\partial}{\partial t} \frac{\epsilon \mu}{c} \frac{\partial \b E}{\partial t}
+\end{equation*}
+
+\noindent
+Таким образом из уравнений Максвелла следуют волновые уравнения для электрического и магнитного полей:
+
+\begin{align}
+    \frac{\partial^2 \b E}{\partial t^2} &= \frac{c^2}{\epsilon \mu} \Delta \b E \\
+    \frac{\partial^2 \b B}{\partial t^2} &= \frac{c^2}{\epsilon \mu} \Delta \b B
+\end{align}
+
+Если волна распространяется вдоль конкретной оси, например $x$. то решением уравнения $\frac{\partial^2 f}{\partial t^2} - a^2 \Delta f = 0$ является функция вида $f(x, t) = f_1 (t - \frac{x}{a}) + f_2(t + \frac{x}{a})$. Таким образом, решения уравнений Максвелла есть волны, распространяющиеся со скоростью $\frac{c}{n}$, где величина $n = \sqrt{\epsilon \mu}$ называется показателем преломления. Важным частным случаем являются плоские монохроматические волны:
+
+\begin{align}
+    \b E &= \b E_0 e^{i \left( \omega t - \b k \b r \right)} \\
+    \b B &= \b B_0 e^{i \left( \omega t - \b k \b r \right)}
+\end{align}
+
+\noindent
+Здесь $\b k$ -- волновой вектор, направление которого совпадает с направлением распространения волны. $k = \frac{\omega n}{c}$.
+Непосредственно из уравнений Максвелла в применении к этим волнам следует их поперечность ($\b E \perp \b k$, $\b B \perp \b k$), перпендикулярность векторов $\b E$ и $\b B$ а так же равенство $B = n E$.
+
+Рассмотрим теперь некоторую функцию $\b f (\b r, t) = \b f_0 (\b r) e^{i \omega t}$, являющуюся решением волнового уравнения. Заметим, что $\frac{\partial^2 \b f}{\partial t^2} = - \omega^2 \b f$. Тогда волновое уравнения $\frac{\partial^2 \b f}{\partial t^2} = v^2 \Delta \b f$ переходит в уравнение Гельмгольца:
+
+\begin{equation}
+    \Delta \b f_0 + k^2 \b f_0 = 0
+\end{equation}
+
+\noindent
+где $k = \omega / v$.
